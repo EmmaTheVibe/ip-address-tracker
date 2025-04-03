@@ -1,0 +1,120 @@
+.fetcher {
+  font-family: var(--font-rubik), sans-serif;
+  padding-top: 24px;
+  /* height: 200px; */
+}
+.container {
+  position: relative;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg {
+  object-fit: cover;
+  object-position: top;
+}
+.title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.fetcher form {
+  width: 100%;
+}
+.inputBox {
+  display: flex;
+  background-color: #fff;
+  height: 56px;
+  border-radius: 8px;
+  width: 100%;
+}
+.fetcher input {
+  width: 85%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 12px;
+}
+.fetcher button {
+  border: none;
+  background-color: hsl(0, 0%, 17%);
+  height: 100%;
+  width: 15%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.infoBox {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 20px 0;
+  border-radius: 8px;
+  top: 125%;
+  z-index: 1000;
+}
+.line {
+  margin-bottom: 16px;
+}
+.line:last-of-type {
+  margin-bottom: 0;
+}
+.tag {
+  color: hsl(0, 0%, 59%);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.content {
+  color: hsl(0, 0%, 17%);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    margin-bottom: 100px;
+  }
+  .fetcher form {
+    width: 600px;
+  }
+  .fetcher input {
+    padding: 0 20px;
+    width: 90%;
+  }
+  .fetcher button {
+    width: 10%;
+  }
+  .infoBox {
+    flex-direction: row;
+    padding: 20px 10px;
+    top: 155%;
+  }
+  .line {
+    margin-bottom: 0;
+    text-align: left;
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding: 0 20px 0 10px;
+  }
+  .line:last-of-type {
+    border: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .infoBox {
+    padding: 40px 10px;
+    top: 132%;
+    justify-content: left;
+  }
+  .line {
+    padding: 0 60px 0 25px;
+  }
+  .content {
+    font-size: 18px;
+  }
+}
