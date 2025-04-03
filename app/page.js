@@ -1,11 +1,9 @@
-import IpFetcher from "@/app/_components/IpFetcher/IpFetcher";
-import MapBox from "./_components/MapBox";
+import ContentBox from "./_components/ContentBox/ContentBox";
 
 export default function Page() {
   return (
     <main>
-      <IpFetcher />
-      <MapBox />
+      <ContentBox />
     </main>
   );
 }

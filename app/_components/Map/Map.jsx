@@ -44,20 +44,18 @@ const Map = () => {
   if (!isMounted) return <Spinner />;
 
   return (
-    <section className={styles.mapContainer}>
-      <MapContainer
-        center={[lat, lng]}
-        zoom={13}
-        className={styles.map}
-        zoomControl={md ? true : false}
-      >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <Marker position={[lat, lng]} icon={customIcon}>
-          <Popup>Your Location</Popup>
-        </Marker>
-        <RecenterMap lat={lat} lng={lng} />
-      </MapContainer>
-    </section>
+    <MapContainer
+      center={[lat, lng]}
+      zoom={13}
+      className={styles.map}
+      zoomControl={md ? true : false}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <Marker position={[lat, lng]} icon={customIcon}>
+        <Popup>Your Location</Popup>
+      </Marker>
+      <RecenterMap lat={lat} lng={lng} />
+    </MapContainer>
   );
 };
 

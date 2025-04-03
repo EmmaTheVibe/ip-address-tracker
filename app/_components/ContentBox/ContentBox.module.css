@@ -1,0 +1,66 @@
+.contentBox {
+  font-family: var(--font-rubik), sans-serif;
+  padding-top: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  position: relative;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+}
+.title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.contentBox form {
+  width: 100%;
+}
+
+.contentBox input {
+  width: 85%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 12px;
+}
+.contentBox button {
+  border: none;
+  background-color: hsl(0, 0%, 17%);
+  height: 100%;
+  width: 15%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.mapContainer {
+  flex: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    margin-bottom: 100px;
+    width: 645px;
+  }
+  .contentBox form {
+    width: 600px;
+  }
+  .contentBox input {
+    padding: 0 20px;
+    width: 90%;
+  }
+  .contentBox button {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+}

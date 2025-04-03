@@ -1,28 +1,8 @@
 .fetcher {
   font-family: var(--font-rubik), sans-serif;
   padding-top: 24px;
-  /* height: 200px; */
 }
-.container {
-  position: relative;
-  margin-bottom: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bg {
-  object-fit: cover;
-  object-position: top;
-}
-.title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 24px;
-}
-.fetcher form {
-  width: 100%;
-}
+
 .inputBox {
   display: flex;
   background-color: #fff;
@@ -30,20 +10,7 @@
   border-radius: 8px;
   width: 100%;
 }
-.fetcher input {
-  width: 85%;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  padding: 0 12px;
-}
-.fetcher button {
-  border: none;
-  background-color: hsl(0, 0%, 17%);
-  height: 100%;
-  width: 15%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+
 .infoBox {
   width: 100%;
   background-color: #fff;
@@ -56,6 +23,7 @@
   border-radius: 8px;
   top: 125%;
   z-index: 1000;
+  box-shadow: 8px 20px 30px 1px rgba(29, 32, 37, 0.1);
 }
 .line {
   margin-bottom: 16px;
@@ -77,19 +45,6 @@
 }
 
 @media screen and (min-width: 650px) {
-  .container {
-    margin-bottom: 100px;
-  }
-  .fetcher form {
-    width: 600px;
-  }
-  .fetcher input {
-    padding: 0 20px;
-    width: 90%;
-  }
-  .fetcher button {
-    width: 10%;
-  }
   .infoBox {
     flex-direction: row;
     padding: 20px 10px;
